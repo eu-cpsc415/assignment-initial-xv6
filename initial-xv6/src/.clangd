@@ -1,0 +1,7 @@
+CompileFlags:
+  Add:
+    # Resolve includes like "kernel/types.h" from files in src/user and src/kernel.
+    - -I.
+    # Match xv6's C dialect and freestanding environment closely enough for indexing.
+    - -ffreestanding
+    - -fno-builtin

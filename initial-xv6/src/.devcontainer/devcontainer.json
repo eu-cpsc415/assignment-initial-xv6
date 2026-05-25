@@ -1,0 +1,19 @@
+{
+  "image": "victorbush/devcontainer-qemu-riscv:2026.0",
+  "customizations": {
+    "settings": {
+      "clangd.path": "/usr/bin/clangd",
+      "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--completion-style=detailed"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "llvm-vs-code-extensions.vscode-clangd",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
