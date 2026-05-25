@@ -1,15 +1,20 @@
 {
   "image": "victorbush/devcontainer-qemu-riscv:2026.0",
   "customizations": {
-    "settings": {
-      "clangd.path": "/usr/bin/clangd",
-      "clangd.arguments": [
-        "--background-index",
-        "--clang-tidy",
-        "--completion-style=detailed"
-      ]
-    },
     "vscode": {
+      "settings": {
+        "clangd.path": "/usr/bin/clangd",
+        "clangd.arguments": [
+          "--background-index",
+          "--clang-tidy",
+          "--completion-style=detailed"
+        ],
+        "clangd.fallbackFlags": [
+          "-I/workspaces/assignment-initial-xv6/initial-xv6/src",
+          "-ffreestanding",
+          "-fno-builtin"
+        ]
+      },
       "extensions": [
         "llvm-vs-code-extensions.vscode-clangd",
         "esbenp.prettier-vscode"

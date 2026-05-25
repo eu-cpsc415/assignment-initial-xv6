@@ -1,11 +1,6 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
-  "clangd.fallbackFlags": [
-    "-I/workspaces/assignment-initial-xv6-solution/initial-xv6/src",
-    "-ffreestanding",
-    "-fno-builtin"
-  ],
   "C_Cpp.intelliSenseEngine": "disabled",
   "C_Cpp.errorSquiggles": "disabled",
   "github.copilot.editor.enableCodeActions": false,
