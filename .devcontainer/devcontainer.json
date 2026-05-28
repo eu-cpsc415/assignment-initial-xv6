@@ -10,7 +10,7 @@
           "--completion-style=detailed"
         ],
         "clangd.fallbackFlags": [
-          "-I/workspaces/assignment-initial-xv6/initial-xv6/src",
+          "-I/workspaces/assignment-initial-xv6/src",
           "-ffreestanding",
           "-fno-builtin"
         ]

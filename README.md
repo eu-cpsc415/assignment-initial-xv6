@@ -16,7 +16,7 @@ Your system call returns the value of a counter (perhaps called `readcount` or s
 
 ## Background
 
-The xv6 source code is stored in the `initial-xv6/src/` directory. To compile and launch the xv6 OS using the QEMU emulator, navigate into this directory in the terminal and execute the following:
+The xv6 source code is stored in the `src/` directory. To compile and launch the xv6 OS using the QEMU emulator, navigate into this directory in the terminal and execute the following:
 
 ```
 make qemu
@@ -60,7 +60,7 @@ Using gdb (the debugger) may be helpful in understanding code, doing code traces
 
 # Running Tests
 
-Running tests for your system call is easy. Run the `test-getreadcounts.sh` script from inside the `initial-xv6` directory:
+Running tests for your system call is easy. Run the `test-getreadcounts.sh` script from the root of the repository:
 
 ```sh
 prompt> ./test-getreadcounts.sh

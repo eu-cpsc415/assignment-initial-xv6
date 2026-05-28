@@ -6,7 +6,7 @@
       "type": "shell",
       "command": "make -f Makefile kernel/kernel fs.img && rm -f .gdbinit && echo QEMU_GDB_READY && qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 3 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S -gdb tcp::26000",
       "options": {
-        "cwd": "${workspaceFolder}/initial-xv6/src"
+        "cwd": "${workspaceFolder}/src"
       },
       "isBackground": true,
       "problemMatcher": {
@@ -44,7 +44,7 @@
       "type": "shell",
       "command": "make -f Makefile kernel/kernel",
       "options": {
-        "cwd": "${workspaceFolder}/initial-xv6/src"
+        "cwd": "${workspaceFolder}/src"
       },
       "group": {
         "kind": "build",
